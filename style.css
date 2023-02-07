@@ -1,0 +1,125 @@
+:root {
+  --main-color: #313c4e;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Roboto;
+  font-size: 12px;
+  padding: 0;
+  margin: 0;
+}
+
+section {
+  margin-bottom: 0.6rem;
+}
+
+section>* {
+  margin-left: 1rem;
+}
+
+#wrapper {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 8rem auto;
+  grid-template-areas:
+    "aside header"
+    "aside main";
+  gap: 0.8rem;
+  width: 21cm;
+  height: 29.7cm;
+  box-shadow: 0px 0px 15px black;
+  padding: 1.5rem 0;
+  padding-right: 0;
+}
+
+aside {
+  grid-area: aside;
+}
+
+aside figure {
+  margin: 0;
+}
+
+aside figure div {
+  height: 8rem;
+  width: 8rem;
+  background-image: url("photo-cv.jpg");
+  /* border-radius: 100%; */
+  background-attachment: local;
+  background-position: -1.5rem -3.5rem;
+  background-size: 12rem;
+  margin: 0 auto;
+}
+
+header {
+  grid-area: header;
+  background-color: var(--main-color);
+  color: white;
+  padding: 0.6rem 1rem;
+}
+
+header>p {
+  font-size: 0.8rem;
+  margin: 0.6rem 0rem;
+}
+
+header>h1 {
+  font-size: 2rem;
+}
+
+header>h3 {
+  font-size: 0.9rem;
+}
+
+header>h1,
+header>h3 {
+  color: white;
+  font-weight: 500;
+  margin: 0;
+}
+
+header>h3.position {
+  padding: 0px;
+  border-bottom-color: white;
+  width: 12.5rem;
+}
+
+main {
+  grid-area: main;
+  padding-right: 2rem;
+}
+
+.section_name {
+  padding: 0px 1rem;
+  border-bottom: 1px solid black;
+}
+
+.projects li {
+  /* list-style-type: "□"; */
+  list-style-type: square;
+}
+
+.projects ul {
+  margin-left: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--main-color);
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
