@@ -1,3 +1,8 @@
+@page {
+  /* size: 21cm 29.7cm; */
+  size: A4;
+}
+
 :root {
   --main-color: #313c4e;
 }
@@ -21,7 +26,8 @@ section {
 
 #wrapper {
   width: 21cm;
-  height: 29.7cm;
+  /* height: 29.7cm; */
+  height: 28cm; /* idk this is what ok for print */
   box-shadow: 0px 0px 15px black;
   padding: 2rem 0;
   padding-right: 0;
@@ -46,7 +52,7 @@ header figure div {
   height: 8rem;
   width: 8rem;
   background-image: url("photo-cv.jpg");
-  /* border-radius: 100%; */
+  border-radius: 12%;
   background-attachment: local;
   background-position: -1.5rem -3.5rem;
   background-size: 12rem;
@@ -106,6 +112,10 @@ aside .contact .icon {
   transform: scale(80%) translateX(-5px);
 }
 
+aside li {
+  margin: 0 0 0.55rem 0;
+}
+
 aside .skills li {
   width: fit-content;
   max-width: 78%;
@@ -138,10 +148,6 @@ article>section {
 
 article>section>div {
   margin-left: 1rem;
-}
-
-aside li {
-  margin: 0 0 0.8rem 0;
 }
 
 .section_name {
